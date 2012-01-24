@@ -1,0 +1,5 @@
+<div>
+  This plugin allows for two select parameters to be defined where the
+  value options in the second select alter based on the option picked
+  in the first.
+</div>
