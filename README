@@ -1,3 +1,6 @@
 A Jenkins parameter plugin that allows for a select element which
 populates allowed values depending upon the value selected for a
 previous select element.
+
+Two parameters are made available to a build when using this plugin.
+One corresponding to each select element.
