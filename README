@@ -1,3 +1,0 @@
-A Jenkins parameter plugin that allows for a select element which
-populates allowed values depending upon the value selected for a
-previous select element.
