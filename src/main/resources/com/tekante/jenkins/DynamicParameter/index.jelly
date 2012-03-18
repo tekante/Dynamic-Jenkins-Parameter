@@ -3,17 +3,17 @@
   xmlns:l="/lib/layout" xmlns:t="/lib/hudson" xmlns:f="/lib/form"
   xmlns:i="jelly:fmt" xmlns:p="/lib/hudson/project">
 
-  <f:entry description="${it.description}">
-    <div name="parameter">
-      <j:set var="instance" value="${it}" />
-      <j:set var="descriptor" value="${it.descriptor}" />
+  <div name="parameter">
+    <j:set var="instance" value="${it}" />
+    <j:set var="descriptor" value="${it.descriptor}" />
+    <f:entry title="${it.name}">
 
       <input type="hidden" name="name" value="${it.name}" />
+      <f:select field="value" default="" />
+    </f:entry>
+    <f:entry description="${it.description}" title="${it.secondName}">
       <input type="hidden" name="secondName" value="${it.secondName}" />
-      ${it.name}<br />
-      <f:select field="value" default="" title="${it.name}" /><br />
-      ${it.secondName}<br />
-      <f:select field="dynamicValue" title="${it.secondName}" />
-    </div>
-  </f:entry>
+      <f:select field="dynamicValue" />
+    </f:entry>
+  </div>
 </j:jelly>

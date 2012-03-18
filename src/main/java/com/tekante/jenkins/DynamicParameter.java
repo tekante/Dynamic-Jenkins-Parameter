@@ -33,7 +33,8 @@ import java.io.UnsupportedEncodingException;
  */
 
 public class DynamicParameter extends ParameterDefinition {
-  static final long serialVersionUID = 3;
+  private static final Logger LOG = Logger.getLogger(DynamicParameter.class.getName());
+  static final long serialVersionUID = 4;
   public String value = "";
   public String dynamicValue = "";
   public String valueOptions;
@@ -80,7 +81,7 @@ public class DynamicParameter extends ParameterDefinition {
     }
 
     public ListBoxModel doFillValueItems(@QueryParameter String name) {
-      LOG.warning("Called with param: " + name);
+      LOG.finer("Called with param: " + name);
       ListBoxModel m = new ListBoxModel();
 
       DynamicParameter dp = this.getDynamicParameter(name);
