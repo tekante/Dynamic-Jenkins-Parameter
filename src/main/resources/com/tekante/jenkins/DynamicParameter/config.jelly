@@ -21,7 +21,7 @@
   <f:entry title="Name" field="secondName" description="The name of the parameter set by the second select box">
     <f:textbox />
   </f:entry>
-  <f:entry title="Options" field="dynamicValueOptions" description="List options, one per line available for the second parameter, prefix with the value of the first parameter and a colon do determine which should show for each possible first parameter value">
+  <f:entry title="Options" field="dynamicValueOptions" description="List options, one per line available for the second parameter, prefix with the value of the first parameter and a colon to determine which should show for each possible first parameter value">
     <f:textarea />
   </f:entry>
 </j:jelly>
